@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("pic11.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+        }
+
+        .layout1 {
+            background-color:antiquewhite;
+            position: absolute;
+            top: 40%;
+            bottom: 50%;
+            left:50%;
+            right: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .layout2 {
+            background-color: blueviolet;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            right: 10%;
+            bottom:50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 70%;
+            width: 40%;
+            padding: 20px;
+            text-align: left;
+        }
+
+
+
+            .layout2 h2 {
+                color: aliceblue;
+                margin-bottom: 20px;
+            }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="text"], input[type="number"], input[type="date"], textarea {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"], label[for="male"], label[for="female"], label[for="skills"] {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+    </style>
+    <script>
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function hidePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="img">
+        <img src="pic11.jpg" alt="logo" />
+    </div>
+    <div class="layout1">
+        <button onclick="showPopup()">Click me!</button>
+    </div>
+
+    <div id="popup" style="display: none;">
+        <div class="layout2">
+            <div class="close-button">
+                <button onclick="hidePopup()">Close</button>
+            </div>
+            <div>
+                <h2 style="text-align: center;">Personal Details</h2>
+            </div>
+            <form>
+                <div>
+                    <label for="firstname">First Name: </label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div>
+                    <label for="experience">Experience:</label>
+                    <input type="number" id="experience" name="experience">
+                </div>
+                <div>
+                    <label for="data">Date of Filled:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                </div>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label for="skills">Skills:</label>
+                </div>
+                <div>
+                    <input type="radio" id="java" name="skills" value="java">
+                    <label for="java">JAVA</label>
+                    <input type="radio" id="js" name="skills" value="js">
+                    <label for="js">JS</label>
+                    <input type="radio" id="python" name="skills" value="python">
+                    <label for="python">PYTHON</label>
+                </div>
+                <div>
+                    <label for="about">ABOUT:</label><br>
+                    <textarea id="about" name="about"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

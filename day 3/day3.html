@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Slideshow for the images</title>
+    <style>
+        .img {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+            .img img {
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                left: 10%;
+                right: 10%;
+                width: 80%;
+                height: 600%;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+                .img img.active {
+                    opacity: 1;
+                }
+    </style>
+</head>
+<body>
+    <div class="img">
+    </div>
+
+    <script>
+        const images = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg","pic6.jpg","pic7.jpg","pic8.jpg","pic9.jpg","pic10.jpg","pic11.jpg","pic12.jpg"];
+
+        const imgDiv = document.querySelector('.img');
+        let currentSlide = 0;
+        const slideInterval = setInterval(nextSlide, 2000);
+
+        function nextSlide() {
+            imgDiv.innerHTML = `<img src="${images[currentSlide]}" alt="image" class="active" />`;
+            currentSlide = (currentSlide + 1) % images.length;
+        }
+    </script>
+</body>
+</html>
