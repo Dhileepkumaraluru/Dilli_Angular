@@ -1,0 +1,30 @@
+.menu-bar{
+    background-color: lightslategray !important;
+    color: whitesmoke ! important;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    left: 40%;
+}
+.middle{
+    background-color: rgb(147, 35, 121);
+    color: black;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    bottom: 70%;
+    right: 30px;
+    border-radius: 50%;
+}
+.page{
+    text-align: center;
+    position: relative;
+    top: 110px;
+    left: 220px;
+    border-radius: 50px;
+    list-style-type: none;
+
+}
