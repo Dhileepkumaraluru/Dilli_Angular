@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MI note 11T 5G",
+      "price": 999.99,
+      "image": "phone.jpg",
+      "type": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "L'Oreal Paris Mascara",
+      "price": 9.99,
+      "image": "mascara.jpg",
+      "type": "Cosmetics"
+    },
+    {
+      "id": 3,
+      "name": "Organic Apples",
+      "price": 2.99,
+      "image": "apples.jpg",
+      "type": "Groceries"
+    },
+    {
+      "id": 4,
+      "name": "To Kill a Mockingbird",
+      "price": 12.99,
+      "image": "mockingbird.jpg",
+      "type": "Books"
+    },
+    {
+      "id": 5,
+      "name": "Sony PlayStation 5",
+      "price": 499.99,
+      "image": "sony.jpg",
+      "type": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "Maybelline New York Foundation",
+      "price": 14.99,
+      "image": "newyork.jpg",
+      "type": "Cosmetics"
+    },
+    {
+      "id": 7,
+      "name": "Fresh Broccoli",
+      "price": 1.99,
+      "image": "broccoli.jpg",
+      "type": "Groceries"
+    },
+    {
+      "id": 8,
+      "name": "The Great Gatsby",
+      "price": 8.99,
+      "image": "gatsby.jpg",
+      "type": "Books"
+    },
+    {
+      "id": 9,
+      "name": "Samsung Galaxy Watch 4",
+      "price": 349.99,
+      "image": "samsung.jpg",
+      "type": "Electronics"
+    },
+    {
+      "id": 10,
+      "name": "MAC Blush",
+      "price": 19.99,
+      "image": "blush.jpg",
+      "type": "Cosmetics"
+    }
+  ]
+}

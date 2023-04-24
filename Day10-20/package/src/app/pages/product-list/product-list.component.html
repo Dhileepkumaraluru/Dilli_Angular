@@ -1,0 +1,14 @@
+<h1 class="head">MY CART ITEMS</h1>
+<mat-toolbar>
+    <select [(ngModel)]="selected">
+        <option *ngFor="let x of types">{{x}}</option><br><br>
+    </select>
+    <mat-slider min="1.00$" max="1000$">
+        <input value="1.00$" matSliderStartThumb>
+        <input value="1000$" matSliderEndThumb>
+      </mat-slider>
+</mat-toolbar>
+
+  
+
+<app-main-bar *ngFor="let x of productslist | product:selected "[products]="x"></app-main-bar>
